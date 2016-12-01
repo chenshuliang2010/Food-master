@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * @name: Food-master
  * @class name：com.csl.food.module.presenter
- * @Fuction : describe
+ * @Fuction : 菜谱列表代理接口实现
  * @anthor :csl QQ:870588442
  * @time :2016/11/30 23:18
  * @change:

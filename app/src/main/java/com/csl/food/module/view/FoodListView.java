@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * @name: Food-master
  * @class name：com.csl.food.module.view
- * @Fuction : describe
+ * @Fuction : 菜谱列表视图接口
  * @anthor :csl QQ:870588442
  * @time :2016/11/30 23:19
  * @change:

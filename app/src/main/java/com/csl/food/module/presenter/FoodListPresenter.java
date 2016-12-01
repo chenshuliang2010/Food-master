@@ -5,7 +5,7 @@ import com.csl.food.base.BasePresenter;
 /**
  * @name: Food-master
  * @class name：com.csl.food.module.presenter
- * @Fuction : describe
+ * @Fuction : 菜谱列表代理接口
  * @anthor :csl QQ:870588442
  * @time :2016/11/30 23:17
  * @change:

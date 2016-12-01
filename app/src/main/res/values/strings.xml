@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Food-master</string>
+    <string name="title_activity_particulars">ParticularsActivity</string>
 </resources>

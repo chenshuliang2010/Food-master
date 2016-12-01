@@ -181,7 +181,7 @@ public class RetrofitManager {
      * @return 被视察的对象
      */
     public Observable<FoodSummary> getBox0fficeListObservable() {
-        return mFoodService.getFoodList(0,1,10)
+        return mFoodService.getFoodList(0,1,20)
                 .compose(new BaseSchedulerTransformer<FoodSummary>());
     }
 }

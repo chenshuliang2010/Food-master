@@ -9,7 +9,7 @@ import java.lang.annotation.RetentionPolicy;
  * @name Test-master
  * @class name：com.test.csl.base
  * @class describe
- * @Fuction:
+ * @Fuction:数据加载结果的类型
  * @anthor csl QQ:1032006226
  * @time 2016/11/30 23:42
  * @change

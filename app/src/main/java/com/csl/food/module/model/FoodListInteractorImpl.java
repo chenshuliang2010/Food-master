@@ -16,7 +16,7 @@ import rx.functions.Func2;
 /**
  * @name: Food-master
  * @class name：com.csl.food.module.model
- * @Fuction : describe
+ * @Fuction : 菜谱列表Model层接口实现
  * @anthor :csl QQ:870588442
  * @time :2016/11/30 23:11
  * @change:
