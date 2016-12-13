@@ -1,5 +1,6 @@
 package com.csl.food.http.service;
 
+import com.csl.food.bean.FoodEntity;
 import com.csl.food.bean.FoodSummary;
 
 import retrofit2.http.GET;
@@ -29,4 +30,14 @@ public interface FoodService {
             @Query("id") int id,
             @Query("page")int page,
             @Query("rows")int rows);
+
+    /**
+     *
+     * @param name 请求参数食品名称
+     * @return 被观察对象
+     */
+    @GET("api/food/name")
+    Observable<FoodEntity>getFoodName(
+            @Query("name")String name
+    );
 }

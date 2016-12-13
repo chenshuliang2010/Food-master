@@ -7,6 +7,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.csl.food.module.ui.MainActivity">
+    <Button
+        android:id="@+id/btIntent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="食品名称详情"/>
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rv_list"

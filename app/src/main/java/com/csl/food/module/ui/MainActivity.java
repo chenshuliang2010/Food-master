@@ -10,6 +10,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.Window;
+import android.widget.Button;
 
 import com.bumptech.glide.Glide;
 import com.csl.food.R;
@@ -36,6 +37,13 @@ public class MainActivity extends AppCompatActivity implements FoodListView {
     private RecyclerView mRecyclerView;
     //Loading弹框
     private ProgressDialog mProgressDialog;
+
+
+    //食品名称详情
+    private Button mButton;
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,6 +55,19 @@ public class MainActivity extends AppCompatActivity implements FoodListView {
     private void initView() {
 
         mRecyclerView=(RecyclerView)findViewById(R.id.rv_list);
+
+        mButton=(Button)findViewById(R.id.btIntent);
+        mButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this,FoodNameActivity.class));
+            }
+        });
+
+
+
+
+        /////////////////////////
 
         //初始化Loading
         mProgressDialog = new ProgressDialog(this);

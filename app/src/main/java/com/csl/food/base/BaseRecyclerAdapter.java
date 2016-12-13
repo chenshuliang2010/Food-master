@@ -69,28 +69,7 @@ public abstract class BaseRecyclerAdapter<T> extends RecyclerView.Adapter<BaseRe
 
     @Override
     public BaseRecyclerViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        if (viewType == TYPE_MORE) {
-            return new BaseRecyclerViewHolder(mContext, mInflater.inflate(R.layout.item_load_more, parent, false));
-        } else if (viewType == TYPE_MORE_FAIL) {
-            final BaseRecyclerViewHolder holder = new BaseRecyclerViewHolder(mContext, mInflater.inflate(R.layout.item_load_more_failed, parent, false));
-            if (mOnLoadMoreListener != null) {
-                holder.itemView.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        mEnableLoadMore = true;
-                        mShowLoadMoreView = true;
-                        notifyItemChanged(getItemCount() - 1);
-                        holder.itemView.postDelayed(new Runnable() {
-                            @Override
-                            public void run() {
-                                mOnLoadMoreListener.loadMore();
-                            }
-                        }, 300);
-                    }
-                });
-            }
-            return holder;
-        } else if (viewType == TYPE_EMPTY) {
+       if (viewType == TYPE_EMPTY) {
             final BaseRecyclerViewHolder holder = new BaseRecyclerViewHolder(mContext, mInflater.inflate(R.layout.item_empty_view, parent, false));
             if (mEmptyClickListener != null) {
                 holder.itemView.setOnClickListener(new View.OnClickListener() {

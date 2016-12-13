@@ -4,6 +4,7 @@ import android.util.SparseArray;
 
 import com.csl.food.app.App;
 import com.csl.food.base.BaseSchedulerTransformer;
+import com.csl.food.bean.FoodEntity;
 import com.csl.food.bean.FoodSummary;
 import com.csl.food.http.Api;
 import com.csl.food.http.service.FoodService;
@@ -183,5 +184,16 @@ public class RetrofitManager {
     public Observable<FoodSummary> getBox0fficeListObservable() {
         return mFoodService.getFoodList(0,1,20)
                 .compose(new BaseSchedulerTransformer<FoodSummary>());
+    }
+
+    /**
+     * 食物名称查看
+     * @param name 请求参数
+     * @return
+     */
+    public Observable<FoodEntity> getFoodNameObservable(String name){
+        return  mFoodService.getFoodName(name)
+                .compose(new BaseSchedulerTransformer<FoodEntity>());
+
     }
 }

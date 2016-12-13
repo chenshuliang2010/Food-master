@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.csl.food.module.ui.FoodNameActivity">
+
+    <EditText
+        android:id="@+id/etHint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="请输入食物名称，如黄瓜"/>
+
+    <Button
+        android:id="@+id/btConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="确定"/>
+
+    <TextView
+        android:id="@+id/tvContent"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fdfsafdsafadsfasfdasfsadfsadfdasf"/>
+    <TextView
+        android:id="@+id/tvContent2"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fdfsafdsafadsfasfdasfsadfsadfdasf"/>
+    <TextView
+        android:id="@+id/tvContent3"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fdfsafdsafadsfasfdasfsadfsadfdasf"/>
+    <TextView
+        android:id="@+id/tvContent4"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fdfsafdsafadsfasfdasfsadfsadfdasf"/>
+
+
+
+</LinearLayout>

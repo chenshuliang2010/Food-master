@@ -22,6 +22,10 @@
         <activity
             android:name=".module.ui.ParticularsActivity"
             android:label="@string/title_activity_particulars"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".module.ui.FoodNameActivity"
+            android:label="@string/title_activity_food_name"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
